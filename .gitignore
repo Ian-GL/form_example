@@ -32,3 +32,7 @@ form_example-*.tar
 npm-debug.log
 /assets/node_modules/
 
+# Gleam builds and packages
+/shared_gleam/build
+/shared_gleam/.DS_Store
+

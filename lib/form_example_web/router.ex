@@ -18,6 +18,8 @@ defmodule FormExampleWeb.Router do
     pipe_through :browser
 
     get "/", PageController, :index
+
+    post "/user", PageController, :create_user
   end
 
   # Other scopes may use custom stacks.
