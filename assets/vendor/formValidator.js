@@ -38,7 +38,7 @@ const validateForm = () => {
 }
 
 const showInfo = (msg) => {
-  errorAlert.innerHTML = msg;
+  infoAlert.innerHTML = msg;
 }
 
 const showError = (msg) => {
