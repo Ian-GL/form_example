@@ -1,5 +1,5 @@
 import gleam/dynamic
-import gleam/io
+// import gleam/io
 import gleam/string
 import gleam/list
 import gleam/regex
@@ -100,7 +100,7 @@ fn check_empty_str(str: String, field: String) {
 fn check_email(email: String) {
   case check_regex(email, email_regex) {
     True -> Ok(email)
-    False -> Error("invalid_email")
+    False -> Error("invalid email")
   }
 }
 
