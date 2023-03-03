@@ -1,19 +1,19 @@
 # FormExample
 
-To start your Phoenix server:
+This project is a small example on how to use Gleam to share validation code in the backend and frontend.
 
-  * Install dependencies with `mix deps.get`
-  * Create and migrate your database with `mix ecto.setup`
-  * Start Phoenix endpoint with `mix phx.server` or inside IEx with `iex -S mix phx.server`
+## Requirements
 
-Now you can visit [`localhost:4000`](http://localhost:4000) from your browser.
+- Erlang
+- Elixir
+- Gleam
 
-Ready to run in production? Please [check our deployment guides](https://hexdocs.pm/phoenix/deployment.html).
+## Running
 
-## Learn more
+Since this is a Phoenix project, the usuals apply here like `mix ecto.create` and `mix deps.get`, etc. Once that is done, to compile the Gleam code to use it you need to download the Gleam deps and run the build commands (for this last step there is a Makefile). So to get this running you need to do the following:
 
-  * Official website: https://www.phoenixframework.org/
-  * Guides: https://hexdocs.pm/phoenix/overview.html
-  * Docs: https://hexdocs.pm/phoenix
-  * Forum: https://elixirforum.com/c/phoenix-forum
-  * Source: https://github.com/phoenixframework/phoenix
+```sh
+cd shared_gleam
+gleam deps download
+make build-gleam
+```

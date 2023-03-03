@@ -6,14 +6,13 @@ defmodule FormExample.MixProject do
       app: :form_example,
       version: "0.1.0",
       elixir: "~> 1.12",
-      archives: [mix_gleam: "~> 0.6.1"],
       elixirc_paths: elixirc_paths(Mix.env()),
       erlc_paths: [
         "shared_gleam/build/dev/erlang/shared_gleam/_gleam_artefacts",
         "shared_gleam/build/dev/erlang/gleam_stdlib/_gleam_artefacts",
       ],
       erlc_include_path: "shared_gleam/build/dev/erlang/shared_gleam/include",
-      compilers: [:gleam |  Mix.compilers()],
+      compilers: Mix.compilers(),
       start_permanent: Mix.env() == :prod,
       aliases: aliases(),
       deps: deps()
